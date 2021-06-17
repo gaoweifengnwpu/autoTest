@@ -6,8 +6,7 @@ browser = webdriver.Chrome()
 browser.maximize_window()
 #2.通过浏览器向服务器发送URL请求
 browser.get("https://192.73.0.127:3000/login.html")
-# sleep(3)
-#3.刷新浏览器
+
 login=['secur','secur@123']
 #4.设置浏览器的大小
 # browser.set_window_size(100,800)
