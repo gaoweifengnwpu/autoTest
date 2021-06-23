@@ -12,9 +12,7 @@ print(flag)
 result = ''
 # 返回该路径下所有的 jpg 文件的路径
 img_path = gb.glob(r"D:\autoTest\gif\*.jpg")
-print(img_path)
 for path in img_path:
-    print(path)
     image = Image.open(path)
     image = image.convert('RGB')
     r, g, b = image.getpixel((1, 1))
