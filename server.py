@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import os
 import threading
 import time
 
@@ -45,4 +45,5 @@ threads.append(thread2)
 # 等待所有线程完成
 for t in threads:
     t.join()
+print("本机为",os.cpu_count(),"核 CPU")  # 本机为4核
 print("退出主线程")
